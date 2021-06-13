@@ -1,0 +1,13 @@
+.container{
+  background-image: linear-gradient(90deg, #1F68B7, #1875BC);
+  padding: 20px 10px;
+  display: flex;
+  align-items: baseline;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 40px;
+}
+
+.buttonWrapper{
+  margin-left: 40px;
+}

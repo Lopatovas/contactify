@@ -1,0 +1,23 @@
+.inputWrapper {
+  padding: 0px 10px;
+}
+
+.inputWrapper > input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 300;
+  min-height: 34px;
+  transition: all 0.3s linear;
+}
+
+.inputWrapper > input:focus {
+  outline: 0;
+  border-bottom: 1px solid var(--accent);
+}
+
+.inputWrapper > input::placeholder {
+  color: var(--white);
+}

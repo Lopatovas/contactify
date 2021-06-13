@@ -1,0 +1,20 @@
+.filterModal{
+    background-color: var(--white);
+    color: var(--textColor);
+    position: absolute;
+    top: 162px;
+    right: 377px;
+    z-index: 999;
+  }
+  
+  
+  .filterModal > div {
+    border-bottom: 1px solid var(--active);
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+  
+  .filterModalLabel{
+    color: var(--textColor);
+    padding-left: 10px;
+  }

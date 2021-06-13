@@ -1,0 +1,71 @@
+.wrapper {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.iconSpacing {
+  padding-left: 5px;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  height: 12px;
+  width: 12px;
+  background-color: #f3f2ee;
+  border: 2px solid var(--accent);
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #fff;
+  transition: all 0.3s linear;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--accent);
+  transition: all 0.3s linear;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  transition: all 0.3s linear;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 4px;
+  width: 2px;
+  height: 6px;
+  border: solid var(--white);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  transition: all 0.3s linear;
+}

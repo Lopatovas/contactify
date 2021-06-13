@@ -1,0 +1,7 @@
+.logoStyle {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 30px;
+  padding: 20px 70px;
+  height: 40px;
+}

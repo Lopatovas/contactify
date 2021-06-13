@@ -1,0 +1,82 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tableHeader {
+  color: var(--white);
+  text-align: left;
+  background-color: var(--accent);
+}
+
+.tableRow > td,
+.tableHeader > tr > th {
+  font-size: 14px;
+  font-weight: 300;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.tableHeader > tr > :first-child:hover {
+  cursor: pointer;
+}
+
+.activeFilter {
+  background-color: var(--white);
+  color: var(--accent);
+}
+
+.tableHeader > tr > :last-child:hover{
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--accent);
+}
+
+.tableRow > :nth-last-child(2),
+.tableHeader > tr > :nth-last-child(2) {
+  text-align: right;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+.tableRow > td {
+  border-bottom: 1px solid var(--active);
+  color:var(--textColor);
+}
+
+.tableRow {
+  background-color: var(--white);
+}
+
+.tableRowDark {
+  background-color: #CFD9D9;
+}
+
+.tableRowActive {
+  background-color: var(--active);
+}
+
+.tableRowActiveDark {
+  background-color: #AFC1C4;
+}
+
+.tableRow:hover {
+  background-color: var(--active);
+  cursor: pointer;
+}
+
+.table > tbody > :last-child > :first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.table > tbody > :last-child > :last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.tableActive > tbody > :last-child > :last-child {
+  border-bottom-right-radius: 0px;
+}
+
+.iconSeperator{
+  padding-left: 10px;
+}
